@@ -211,9 +211,9 @@ footer ul li:not(li:last-child) {
 
 /*Smartphone */
 @media screen and (max-width: 600px) {
-  body {
+  /* body {
     background-color: lime;
-  }
+  } */
   header .firstP {
     width: 100%;
     height: 20vh;
@@ -349,8 +349,8 @@ nav .navMenu li {
   }
 /* in Kombination */
 
-@media screen and (min-width: 1200px) and (max-width: 1400px) {
+/* @media screen and (min-width: 1200px) and (max-width: 1400px) {
   body {
     background: blue;
   }
-}
+} */

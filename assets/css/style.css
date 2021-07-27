@@ -1,0 +1,356 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora:wght@400;500&family=Work+Sans:wght@200;300;400&display=swap");
+
+/* CSS hard reset */
+
+* {
+  padding: 0;
+  margin: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+/* general effect */
+ul li {
+  list-style: none;
+  text-decoration: none;
+}
+a {
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+  transition: transform 300ms ease;
+}
+a:hover {
+  transform: scale(1.2);
+}
+li {
+  font-family: "Work Sans", sans-serif;
+}
+
+/* header page */
+header .firstP {
+  background: url(../img/design-interior-1.jpg) right/contain no-repeat;
+  width: 100%;
+  height: 53vh;
+}
+header .firstP h1,
+h5 {
+  margin-left: 12%;
+  font-family: "Lora", serif;
+}
+header .firstP h1 {
+  font-size: 5em;
+  letter-spacing: 40px;
+  margin-bottom: 2%;
+  padding-top: 15%;
+}
+header .firstP h5 {
+  font-size: 1.2em;
+}
+/* navbar (fixed) */
+
+nav {
+  background-color: #000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+nav .navMenu {
+  display: flex;
+  margin-left: 20%;
+}
+nav .navMenu li {
+  padding: 8px 4.5em;
+}
+nav .nav_toogleBtn {
+  display: none;
+  color: white;
+  position: absolute;
+  right: 32px;
+  font-size: 24px;
+}
+/* story */
+.ourStory {
+  position: relative;
+  background-color: #1d2c2f;
+  color: #fff;
+  font-family: "Lora", serif;
+  padding-bottom: 8%;
+}
+.ourStory img {
+  width: 50%;
+  height: 40vh;
+  margin-top: 7%;
+}
+.ourStory article {
+  background-color: #1d2c2f;
+  position: absolute;
+  left: 60%;
+  top: 20%;
+}
+.ourStory article h1 {
+  font-size: 2.5em;
+  text-align: center;
+  margin-bottom: 2.5%;
+}
+.ourStory article p {
+  font-family: "Work Sans", sans-serif;
+  line-height: 2em;
+  margin-bottom: 4%;
+}
+/* Featured */
+.featured {
+  margin: 4%;
+  padding-top: 5em;
+}
+.featured div h1 {
+  font-size: 3em;
+  font-family: "Lora", serif;
+  text-align: center;
+}
+.featured div h5 {
+  font-size: 1em;
+  line-height: 2em;
+  word-spacing: 8px;
+  padding-left: 15em;
+  margin-bottom: 5em;
+}
+.featured div:nth-child(2) {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.featured figure {
+  margin-left: 3%;
+  margin-bottom: 8%;
+}
+figure figcaption {
+  font-size: 1em;
+  font-family: "Lora", serif;
+  text-align: center;
+}
+.featured img {
+  width: 100%;
+}
+.featured iframe {
+  margin-left: 36%;
+  margin-bottom: 5%;
+}
+/* contact */
+.contact {
+  background-color: #1d2c2f;
+  color: #fff;
+  width: 100%;
+  height: 45vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.contact div {
+  padding-left: 10%;
+}
+.contact form {
+  padding-right: 25%;
+}
+.contact h1 {
+  font-size: 2em;
+  margin-bottom: 1em;
+  font-family: "Lora", serif;
+}
+.contact h6,
+p {
+  font-size: 15px;
+  font-family: "Work Sans", sans-serif;
+  line-height: 2.5em;
+}
+.contact h6 {
+  margin-bottom: 2%;
+}
+.contact p {
+  letter-spacing: 4px;
+}
+form input[type]:not(input[type]:last-child) {
+  width: 200%;
+  margin-bottom: 17%;
+  padding: 4%;
+}
+form #message {
+  height: 3vh;
+}
+form label {
+  margin-bottom: 2%;
+}
+form input[type]:last-child {
+  padding: 5%;
+}
+
+footer {
+  background-color: #000;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Work Sans", sans-serif;
+  padding: 2%;
+}
+footer h5 {
+  margin-left: 0;
+}
+footer ul {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 5%;
+}
+footer ul li:not(li:last-child) {
+  margin-right: 20%;
+}
+
+/*Smartphone */
+@media screen and (max-width: 600px) {
+  body {
+    background-color: lime;
+  }
+  header .firstP {
+    width: 100%;
+    height: 20vh;
+  }
+  header .firstP h1,
+  h5 {
+    margin-left: 10%;
+  }
+  header .firstP h1 {
+    font-size: 2em;
+    letter-spacing: 10px;
+    margin-bottom: 1%;
+    padding-top: 15%;
+  }
+  header .firstP h5 {
+    font-size: 7px;
+  }
+  nav {
+    display: flex;
+    width: 100%;
+    padding: 3% 5px;
+    font-size: 10px;
+  }
+  nav .logo > img {
+    width: 30%;
+  }
+nav .navMenu {
+  display: flex;
+}
+nav .navMenu li {
+  padding: 5px 2em;
+}
+.ourStory img {
+    width: 100%;
+    height: 25vh;
+    margin-top: 0;
+  }
+  .ourStory{
+      width:100%;
+      height:25vh;
+  }
+  .ourStory article{
+      display:none;
+  } 
+  .ourStory article h1 { 
+    font-size: 20px;
+  }
+  .ourStory article p {
+   font-size:12px;
+   margin-bottom: 2px;
+   text-align: center;
+  }
+  .featured {
+    margin: 1%;
+    padding-top: 1em;
+  }
+  .featured div h1 {
+    font-size: 1.5em;
+  }
+  .featured div h5 {
+    font-size: 01em;
+    line-height: 1.5em;
+    word-spacing: 4px;
+    padding-left: 1em;
+    margin-bottom: 2em;
+    text-align: center;
+  }
+  .featured div:nth-child(2) {
+    width:40%;
+    flex-direction: column;
+    justify-content: center;
+  margin:0 auto;
+  }
+  .featured figure {
+    margin-left: 3%;
+    margin-bottom: 8%;
+  }
+  .featured img
+  {
+    width: 100%;
+  }
+  .featured iframe {
+    width:40%;
+    height:12vh;
+    margin-left:30%;
+  }
+  .contact {
+    width: 100%;
+    height: 40vh;
+    display:block;
+  }
+ 
+  .contact h1 {
+      padding-top:5%;
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+    padding-left:25%;
+  }
+  .contact h6,
+  p {
+    line-height: 1.5em;
+    padding-left:20%;
+  }
+  .contact div h6 {
+    margin-bottom: 1%;
+  }
+  .contact div p{
+      display:none;
+    letter-spacing: 2px;
+    margin-bottom:10%;
+  }
+  form{
+     padding:5% 0 0 35%;
+    
+  }
+  form input[type]:not(input[type]:last-child) {
+    width: 60%;
+    margin-bottom: 3%;
+    padding: 1%;
+  }
+  form #message {
+    height: 3vh;
+  }
+  form label {
+    margin-bottom: 1%;
+    text-align: center;
+  }
+  form input[type]:last-child {
+    padding: 2%;
+  }
+  footer{
+      font-size:7px;
+  }
+/* in Kombination */
+
+@media screen and (min-width: 1200px) and (max-width: 1400px) {
+  body {
+    background: blue;
+  }
+}
